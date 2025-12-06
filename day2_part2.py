@@ -18,7 +18,7 @@ invalid = set()
 for i in range(1, 99999): # Intervals contain at most 10 digits
     for j in range(2, 10):
         if len(str(i)) * j > 10:
-            continue
+            break
 
         combined = int(str(i) * j)
         if isInvalid(combined):
